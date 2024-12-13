@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "developer": {
+      "name": "One.org",
+      "privacyUrl": "https://one.org/privacy",
+      "termsOfUseUrl": "https://one.org/terms-of-use",
+      "websiteUrl": "https://one.org",
+      "mpnId": "000000"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Search for people within the One organization"
+      },
+      "longDescription": {
+        "default": "Search for people within the One organization"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "People Search Feature",
+        "description": "The feature that activates elements of the spfx-msgraph-peoplesearch solution.",
+        "id": "e09916bd-8e2e-4220-8d05-60d3a6f4d98b",
+        "version": "3.0.0.6",
+        "assets": {
+          "elementFiles": [
+            "schema.xml"
+          ],
+          "elementManifests": [
+            "elements.xml"
+          ]
+        }
+      }
+    ],
+    "name": "One Org People Search",
+    "id": "4c8ad810-8f7f-46b1-bd61-47da12a8e180",
+    "version": "3.0.0.6",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
+    
+  },
+  "paths": {
+    "zippedPackage": "solution/oneorg-msgraph-peoplesearch.sppkg"
+  }
+}

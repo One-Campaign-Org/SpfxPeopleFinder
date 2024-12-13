@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "0ac49f1e-c9cc-4b5d-aa5c-cb397ca22d37",
+  "alias": "MsGraphPeopleSearchWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportsFullBleed": true,
+  "supportedHosts": ["SharePointWebPart","TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [{
+    "groupId": "96e6c639-a8bd-46d0-b4a9-1c3cd5338930",
+    "group": { "default": "SPFx WebParts" },
+    "title": { "default": "One People Search" },
+    "description": { "default": "Search for people within the One organization" },
+    "officeFabricIconFontName": "ProfileSearch",
+    "properties": {
+      "selectParameter": "",
+      "filterParameter": "",
+      "orderByParameter": "",
+      "pageSize": 10,
+      "webPartTitle": "People Search",
+      "showPagination": true,
+      "showLPC": true,
+      "showBlank": true,
+      "showResultsCount": true,
+      "hideResultsOnload": false
+    }
+  }]
+}

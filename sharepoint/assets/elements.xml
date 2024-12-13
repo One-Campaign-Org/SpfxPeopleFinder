@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+    <Field ID="{92cc612b-6620-45a1-ba55-62a7b9cf6c7c}"
+            Name="emailAddress"
+            DisplayName="Email Address"
+            Type="Text"
+            Required="TRUE"
+            Group="Colleague Group" />
+
+    <Field ID="{80354468-4863-4c9b-a894-0976dbfbecfe}"
+            Name="aboutMe"
+            DisplayName="About Me"
+            Type="Text"
+            Required="FALSE"
+            Group="Colleague Group" />
+                       
+    <ContentType ID="0x11f830737ff4bc41a4ffe792d073f41f"
+            Name="Colleague Aboue Me"
+            Group="Colleague Content Types"
+            Description="Content Types for Colleague Finder Webpart">
+        <FieldRefs>
+            <FieldRef ID="{92cc612b-6620-45a1-ba55-62a7b9cf6c7c}" />
+            <FieldRef ID="{80354468-4863-4c9b-a894-0976dbfbecfe}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+            CustomSchema="schema.xml"
+            FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+            Title="Colleague Finder List"
+            Description="About me descriptions for the colleague finder webpart"
+            TemplateType="100"
+            Url="Lists/ColleagueFinderList">
+    </ListInstance>
+
+</Elements>
